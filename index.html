@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MS-CIT College Website (Single Page)</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background: #eef2f6; }
+    header { background: linear-gradient(135deg, #1e40af, #2563eb); color: white; padding: 30px; text-align: center; }
+    nav { background: #0f172a; padding: 12px; text-align: center; position: sticky; top: 0; }
+    nav a { color: white; margin: 0 14px; text-decoration: none; font-weight: 600; }
+    .hero { background: url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=900&q=80') center/cover; color: white; padding: 70px 20px; text-align: center; }
+    .container { max-width: 1000px; margin: 20px auto; padding: 22px; background: white; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h2 { color: #1e40af; border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 16px; }
+    .card { background: #f8fafc; padding: 16px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: center; }
+    th { background: #2563eb; color: white; }
+    .btn { display: inline-block; padding: 10px 14px; background: #2563eb; color: white; border-radius: 8px; text-decoration: none; }
+    .banner-img { width: 100%; border-radius: 12px; }
+    .download-link { display:block; margin:8px 0; font-weight:600; color:#2563eb; }
+    footer { text-align: center; padding: 18px; background: #0f172a; color: white; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>MS-CIT College Website</h1>
+  <p>Created by: Pratik Borade</p>
+  <p>Digital Literacy • Career Ready • Skill Based Education</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#syllabus">Syllabus</a>
+  <a href="#compare">Comparison</a>
+  <a href="#downloads">Downloads</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>Welcome to MS-CIT Campus</h2>
+  <p>Learn computers like a professional in a modern college environment.</p>
+  <a class="btn" href="#downloads">Download Study Material</a>
+</div>
+
+<div class="container" id="about">
+  <h2>About MS-CIT</h2>
+  <img class="banner-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Computer Lab">
+  <p>MS-CIT (Maharashtra State Certificate in Information Technology) is conducted by MKCL. It builds fundamental computer skills needed in schools, colleges, and workplaces.</p>
+  <div class="grid">
+    <div class="card">📚 Basic to Advanced Computing</div>
+    <div class="card">💻 Hands-on Practical Training</div>
+    <div class="card">🌐 Internet & Digital Safety</div>
+    <div class="card">🎓 Certificate Recognized in Maharashtra</div>
+  </div>
+</div>
+
+<div class="container" id="syllabus">
+  <h2>MS-CIT Syllabus</h2>
+  <ul>
+    <li>Computer Fundamentals</li>
+    <li>Windows Operating System</li>
+    <li>MS Word – Documents</li>
+    <li>MS Excel – Data & Charts</li>
+    <li>MS PowerPoint – Presentations</li>
+    <li>Internet, Email & Cloud</li>
+    <li>Cyber Security & Ethics</li>
+  </ul>
+</div>
+
+<div class="container" id="compare">
+  <h2>Comparison Chart</h2>
+  <table>
+    <tr><th>Feature</th><th>MS-CIT</th><th>Basic Course</th></tr>
+    <tr><td>Certification</td><td>MKCL Recognized</td><td>Local Institute</td></tr>
+    <tr><td>Practical Training</td><td>High</td><td>Medium</td></tr>
+    <tr><td>Career Value</td><td>Very Good</td><td>Average</td></tr>
+    <tr><td>Digital Security</td><td>Included</td><td>Often Missing</td></tr>
+  </table>
+</div>
+
+<!-- ======= UPDATED DOWNLOAD SECTION ======= -->
+<div class="container" id="downloads">
+  <h2>Download Section</h2>
+
+  <a class="download-link" 
+     href="https://mscit.mkcl.org" 
+     target="_blank">
+     📘 MS-CIT Curriculum – MKCL (Official PDF)
+  </a>
+
+  <a class="download-link" href="#">
+     📝 Practice Question Bank (PDF) — Coming Soon
+  </a>
+
+  <a class="download-link" href="#">
+     🧪 Mock Test Papers (PDF) — Coming Soon
+  </a>
+
+  <a class="download-link" href="#">
+     📊 Excel Practice Sheets — Coming Soon
+  </a>
+</div>
+<!-- ======================================== -->
+
+<div class="container" id="gallery">
+  <h2>Campus Gallery</h2>
+  <div class="grid">
+    <img class="banner-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80" alt="Classroom">
+    <img class="banner-img" src="https://images.unsplash.com/photo-1596496181848-3092f15c5e34?auto=format&fit=crop&w=400&q=80" alt="Lab">
+    <img class="banner-img" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=400&q=80" alt="Students">
+  </div>
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact</h2>
+  <p>Email: mscit.help@example.com</p>
+  <p id="mycontact">Phone: 8421556980 | Address: Mantha Choufuli, Jalna, Maharashtra</p>
+  <button onclick="navigator.clipboard.writeText(document.getElementById('mycontact').innerText)"
+    style="padding:8px 12px;border:none;border-radius:8px;background:#2563eb;color:white;cursor:pointer;">
+    Copy Contact
+  </button>
+</div>
+
+<footer>© 2026 MS-CIT College Website</footer>
+</body>
+  </html>
